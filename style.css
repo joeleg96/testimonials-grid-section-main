@@ -1,0 +1,119 @@
+:root {
+   --purple-50: hsl(260, 100%, 95%);
+   --purple-300: hsl(264, 82%, 80%);
+   --purple-500: hsl(263, 55%, 52%);
+
+   --white: hsl(0, 0%, 100%);
+   --grey-100: hsl(214, 17%, 92%);
+   --grey-200: hsl(0, 0%, 81%);
+   --grey-400:  hsl(224, 10%, 45%);
+   --grey-500: hsl(217, 19%, 35%);
+   --dark-blue: hsl(219, 29%, 14%);
+   --black: hsl(0, 0%, 7%);
+
+   /* Typography */
+   --tp1-font-size: 1.25rem;
+   --tp1-line-height: 120%;
+   --tp1-letter-spacing: 0rem;
+
+   --tp2-font-size: .8125rem;
+   --tp2-line-height: 110%;
+   --tp2-letter-spacing: 0rem;
+
+   --tp3-font-size: .8125rem;
+   --tp3-line-height: 140%;
+   --tp3-letter-spacing: 0rem;
+
+   --tp4-font-size: .6875rem;
+   --tp4-line-height: 110%;
+   --tp4-letter-spacing: 0rem; 
+}
+
+* {
+    font-family: 'Barlow Semi Condensed';
+}
+
+body {
+    background-color: var(--grey-100);
+}
+
+.container {
+    width: 19rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* General styling */
+.testimonial-container {
+    border-radius: .825rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.name, .grad {
+    margin-left: 1rem;
+    margin-top: .25rem;
+} 
+
+.name {
+    margin-bottom: .25rem;
+    font-size: var(--tp2-font-size);
+    font-weight: 500;
+    line-height: var(--tp2-line-height);
+    letter-spacing: var(--tp2-letter-spacing);
+}
+
+.grad {
+    font-size: var(--tp4-font-size);
+    line-height: var(--tp4-line-height);
+    letter-spacing: var(--tp4-letter-spacing);
+    color: var(--purple-50);
+}
+
+img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.white-text {
+    color: var(--white);
+}
+
+/* Daniel */
+.daniel-container {
+    background-color: var(--purple-500);
+    width: auto;
+    height: auto;
+}
+
+.daniel-img {
+    border: .2rem #A775F1 solid;
+}
+
+
+/* Jonathan */
+.jonathan-container {
+    background-color: var(--grey-500);
+}
+
+/* Jeanette */
+.jeanette-container {
+    background-color: var(--white);
+}
+
+/* Patrick */
+.patrick-container {
+    background-color: var(--dark-blue);
+}
+
+/* Kira */
+.kira-container {
+    background-color: var(--white);
+}
