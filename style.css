@@ -196,3 +196,47 @@ img {
     grid-area: 4/1/5/3;
   }
 }
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 69.6rem;
+        height: 36.3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    
+      .testimonial-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    
+      .daniel-container {
+        grid-area: 1/1/2/3;
+      }
+    
+      .jonathan-container {
+        grid-area: 1/3/2/4;
+      }
+    
+      .jeanette-container {
+        grid-area: 2/1/3/2;
+      }
+    
+      .patrick-container {
+        grid-area: 2/2/3/4;
+      }
+    
+      .kira-container {
+        grid-area: 1/4/3/5;
+      }
+}
