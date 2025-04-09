@@ -35,6 +35,7 @@
 
 body {
     background-color: var(--grey-100);
+    height: 100vh;
 }
 
 .container {
@@ -62,7 +63,7 @@ body {
 } 
 
 .name {
-    margin-bottom: .25rem;
+    margin-bottom: .3rem;
     font-size: var(--tp2-font-size);
     font-weight: 500;
     line-height: var(--tp2-line-height);
@@ -73,17 +74,51 @@ body {
     font-size: var(--tp4-font-size);
     line-height: var(--tp4-line-height);
     letter-spacing: var(--tp4-letter-spacing);
-    color: var(--purple-50);
 }
 
 img {
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: .3rem;
 }
 
 .white-text {
     color: var(--white);
+}
+
+.testimonial-bold {
+    font-size: var(--tp1-font-size);
+    line-height: var(--tp1-line-height);
+    letter-spacing: var(--tp1-letter-spacing);
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.testimonial-light {
+    font-size: var(--tp3-font-size);
+    line-height: var(--tp3-line-height);
+    letter-spacing: var(--tp3-letter-spacing);
+}
+
+.grey-500 {
+    color: var(--grey-500);
+}
+
+.grey-400 {
+    color: var(--grey-400);
+}
+
+.grey-200 {
+    color: var(--grey-200);
+}
+
+.grey-100 {
+    color: var(--grey-100);
+}
+
+.purple-50 {
+    color: var(--purple-50);
 }
 
 /* Daniel */
@@ -97,11 +132,11 @@ img {
     border: .2rem #A775F1 solid;
 }
 
-
 /* Jonathan */
 .jonathan-container {
     background-color: var(--grey-500);
 }
+
 
 /* Jeanette */
 .jeanette-container {
@@ -113,7 +148,51 @@ img {
     background-color: var(--dark-blue);
 }
 
+.patrick-img {
+    border: .2rem #733FCB solid;
+}
+
 /* Kira */
 .kira-container {
     background-color: var(--white);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    width: 40.4rem;
+    height: 72.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .daniel-container {
+    grid-area: 1/1/2/3;
+  }
+
+  .jonathan-container {
+    grid-area: 2/1/3/2;
+  }
+
+  .jeanette-container {
+    grid-area: 2/2/3/3;
+  }
+
+  .patrick-container {
+    grid-area: 3/1/4/3;
+  }
+
+  .kira-container {
+    grid-area: 4/1/5/3;
+  }
 }
